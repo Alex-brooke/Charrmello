@@ -1,0 +1,26 @@
+.landing {
+    background: url(../img/landing.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .hero {
+        padding: 100px 0;
+        min-height: 100vh;
+        background: linear-gradient(0deg, #ED7458 0%, rgba(237, 116, 88, 0.71) 20.43%, rgba(237, 116, 88, 0) 74.15%);
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--content img {
+            max-width: 430px;
+        }
+
+        &--buttons-wrapper a {
+            display: inline-block;
+        }
+
+    }
+
+}

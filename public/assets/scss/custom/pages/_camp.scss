@@ -1,0 +1,262 @@
+.camp {
+    color: #3B5753;
+    overflow-x: hidden;
+
+    #main-navbar {
+        color: $body-color;
+        background-color: $white;
+
+        .nav-item a {
+            color: inherit
+        }
+
+        .navbar-brand {
+            background-image: url("../img/Logo_000000_charrmello.png");
+        }
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        text-align: center;
+        color: #000000;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-weight: 900;
+        font-size: 2.25rem;
+    }
+
+    section {
+        padding: 130px 0;
+    }
+
+    .hero {
+        &__navigation {
+            .nav-link {
+                font-weight: 400;
+                padding: 0.5rem 0.9rem 0.3rem;
+            }
+        }
+    }
+
+    // Cover
+    .cover {
+        &-content {
+            min-height: 445px;
+            position: relative;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+
+            &>* {
+                position: absolute;
+            }
+
+            &-title {
+                top: 0;
+                left: 0;
+                font-size: 2.25rem;
+                font-weight: 600;
+                color: #FFFFFF;
+                margin: 30px 40px;
+            }
+
+            &-edit-btn {
+                font-weight: 300;
+                bottom: 0;
+                right: 0;
+                color: $primary;
+                margin: 10px;
+            }
+
+            .status {
+                bottom: 0;
+                left: 0;
+                margin: 35px;
+                background: #DDE0D9;
+                width: 132px;
+                height: 132px;
+                color: #000000;
+
+                &>* {
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-weight: 400;
+                }
+
+                .status-figure {
+                    font-weight: 800;
+                    font-size: 2.25rem;
+                }
+            }
+        }
+    }
+
+    // Albums
+
+    .albums {
+        .album {
+            cursor: pointer;
+        }
+
+        .card {
+            min-width: 231px;
+            max-height: 231px;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        .card-caption {
+            color: #000000;
+
+            h5 {
+                font-size: inherit;
+
+                .badge {
+                    font-weight: 500;
+                    font-size: inherit;
+                    padding: 0.5rem 0.9rem 0.3rem;
+
+                }
+
+                .badge-icon {
+                    display: inline-block;
+                    padding: 0.1rem 0.7rem;
+
+                    img {
+                        max-width: 26px;
+                        max-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Album Model
+    #albumModel {
+        .description {
+            .nav-link {
+                font-weight: 400;
+
+                &.active {
+                    background-color: transparent;
+                    color: #000000;
+                    font-weight: 600;
+                }
+            }
+
+            .tab-content {
+                background: #F2F2F2;
+                padding: 25px;
+            }
+        }
+
+        .audio {
+            background-color: transparent;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            h5 {
+                font-size: 1.125rem;
+                padding: 0.5rem 1rem;
+                margin: 0;
+                color: #000000;
+                font-weight: 600;
+            }
+
+            .audio-content {
+                background: #DDE0D9;
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .audio-icon {
+                    width: 154px;
+                    height: 154px;
+                }
+            }
+
+
+        }
+    }
+
+
+    #albumDeleteModel {
+        .modal-header {
+            padding-top: 0.45rem;
+            padding-bottom: 0.25rem;
+
+            h5 {
+                flex: 1;
+                font-size: 1.125rem;
+            }
+        }
+
+        .modal-body {
+            .btn-info {
+                background-color: #AFD9C7;
+                border-color: #c3ecdb;
+            }
+
+        }
+
+        .modal-footer {
+
+            button[disabled=true],
+            button[disabled="disabled"] {
+                background: #F2F2F2;
+                border-color: #F2F2F2;
+            }
+        }
+    }
+
+    .album-upload {
+        .album-upload-wrapper {
+            background: #AFD9C7;
+            cursor: pointer;
+            padding: 50px 25px;
+
+            height: 100%;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            img {
+                max-width: 158px;
+                max-height: 158px;
+            }
+
+            span {
+                font-size: 1.5rem;
+                font-weight: 500;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+        }
+
+        div.album-upload-wrapper {
+            background: #F2F2F2;
+            cursor: default;
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+
+            span {
+                color: #DDE0D9;
+            }
+        }
+    }
+
+}

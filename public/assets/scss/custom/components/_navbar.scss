@@ -1,0 +1,108 @@
+.navbar {
+    background-color: transparent;
+    font-weight: 400;
+
+    &-brand {
+        display: block;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-image: url("../img/Logo_FFFFFF_charrmello.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+
+    a.active {
+        font-weight: 500;
+    }
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+.screen-overlay {
+    height: 100%;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(34, 34, 34, 0.6);
+    transition: opacity .2s linear, visibility .1s, width 1s ease-in;
+}
+
+.screen-overlay.show {
+    transition: opacity .5s ease, width 0s;
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+}
+
+@media all and (max-width:768px) {
+
+    .navbar {
+        background-color: transparent;
+
+        &-brand {
+            max-width: 4.5rem;
+            max-height: 4.5rem;
+        }
+
+        &-toggler {
+            padding: 0;
+            width: 50px;
+            height: 50px;
+        }
+
+
+    }
+
+
+    .offcanvas-header {
+        display: block;
+        position: relative;
+
+        img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .nav-close {
+            position: absolute;
+            right: 0;
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+    }
+
+    .mobile-offcanvas {
+        visibility: hidden;
+        transform: translateX(-100%);
+        border-radius: 0;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1200;
+        width: 60%;
+        max-width: 254px;
+        min-width: 160px;
+        overflow-y: auto;
+        border-right: 1px solid #9d9d9d3d;
+        padding: 25px;
+        overflow-x: hidden;
+        transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+        background-color: $primary;
+        background: linear-gradient(180deg, $primary 30%, transparentize($primary, 0.5) 70%);
+    }
+
+    .mobile-offcanvas.show {
+        visibility: visible;
+        transform: translateX(0);
+    }
+}

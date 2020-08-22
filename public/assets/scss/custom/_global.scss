@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth;
+
+    body {
+        font-weight: 300;
+    }
+
+    textarea,
+    .modal-dialog-scrollable .modal-body {
+        scrollbar-width: thin;
+    }
+
+    input:not([type=submit]),
+    textarea {
+        color: #3A3735;
+        font-weight: 300;
+        padding: 19px 17px 15px;
+    }
+
+    button.btn,
+    a.btn {
+        display: inline-flex;
+        align-items: flex-end;
+        line-height: 1.2;
+        padding: 0.475rem 1.8rem 0.375rem;
+    }
+
+    h2.small {
+        font-size: 23px;
+        color: #000000;
+        font-weight: 600 !important;
+    }
+
+    .modal-full {
+        min-width: 100%;
+        margin: 0;
+    }
+
+    .modal-full .modal-content {
+        min-height: 100vh;
+    }
+
+    .p-section {
+        padding: 130px 0;
+    }
+
+    .back {
+        font-size: 1.6875rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #FFFFFF;
+        opacity: .5;
+    }
+
+    .footer-blank {
+        background: #3A3735;
+        height: 95px;
+        width: 100%;
+    }
+
+    .btn-primary.disabled,
+    .btn-primary:disabled {
+        background: #F2F2F2;
+        border-color: #F2F2F2;
+    }
+
+    button[disabled=true],
+    button[disabled="disabled"] {
+        background: #F2F2F2;
+        border-color: #F2F2F2;
+    }
+}
