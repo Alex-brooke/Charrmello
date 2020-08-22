@@ -1,0 +1,11 @@
+// Font-faces
+@import "fontfaces";
+
+// Custom Variables and Overwrites
+@import "variables";
+
+$theme-colors: ("primary": #ED7458);
+
+html {
+    scrollbar-width: thin;
+}
